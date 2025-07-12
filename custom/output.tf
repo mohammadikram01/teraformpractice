@@ -22,3 +22,6 @@ output "InternetGatway" {
 output "natgatway" {
   value = aws_nat_gateway.natgatway.id
 }
+output "s3" {
+  value = aws_s3_bucket.name1.id
+}
