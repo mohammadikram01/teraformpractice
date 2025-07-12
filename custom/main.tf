@@ -63,6 +63,7 @@ resource "aws_route_table" "publicroute" {
 resource "aws_route_table" "pvtroute" {
   vpc_id = aws_vpc.name.id
   tags = {Name= "pvtroute"}
+
 }
 #subnetassociationforpub
 resource "aws_route_table_association" "name" {
